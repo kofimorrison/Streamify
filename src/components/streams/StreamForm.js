@@ -1,23 +1,26 @@
-import React from "react";
+import React, { Component } from "react";
 import { Field, reduxForm } from "redux-form";
+// import StreamForm from "./StreamForm";
 
-class StreamForm extends React.Component {
-  renderError({ error, touched }) {
-    if (touched && error) {
+class StreamForm extends Component {
+  renderError(meta) {
+    if (meta.touched && meta.error) {
       return (
         <div className="ui error message">
-          <div className="header">{error}</div>
+          <div className="header">{meta.error}</div>
         </div>
       );
     }
   }
-  renderInput = ({ input, label, meta }) => {
-    const className = `field ${meta.error && meta.touched ? "error" : ""}`;
+  renderInput = formProps => {
+    const className = `field ${
+      formProps.meta.error && formProps.meta.touched ? "error" : ""
+    }`;
     return (
       <div className={className}>
-        <label>{label}</label>
-        <input {...input} autoComplete="off" />
-        {this.renderError(meta)}
+        <label>{formProps.label}</label>
+        <input {...formProps.input} autoComplete="off" />
+        {this.renderError(formProps.meta)}
       </div>
     );
   };
@@ -62,5 +65,5 @@ const validate = formValues => {
 
 export default reduxForm({
   form: "streamForm",
-  validate
+  validate: validate
 })(StreamForm);

@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { fetchStreams } from "../../actions";
 
-class StreamList extends React.Component {
+class StreamList extends Component {
   componentDidMount() {
     this.props.fetchStreams();
   }
@@ -24,7 +24,6 @@ class StreamList extends React.Component {
       );
     }
   }
-
   renderList() {
     return this.props.streams.map(stream => {
       return (
@@ -35,14 +34,15 @@ class StreamList extends React.Component {
             <Link to={`/streams/${stream.id}`} className="header">
               {stream.title}
             </Link>
+
+            <div className="description">{stream.description}</div>
           </div>
-          <div className="description">{stream.description}</div>
         </div>
       );
     });
   }
   renderCreate() {
-    if (this.props.isSignedIn) {
+    if (this.props.isSignedIn === true) {
       return (
         <div style={{ textAlign: "right" }}>
           <Link to="/streams/new" className="ui button primary">
@@ -62,6 +62,7 @@ class StreamList extends React.Component {
     );
   }
 }
+
 const mapStateToProps = state => {
   return {
     streams: Object.values(state.streams),
