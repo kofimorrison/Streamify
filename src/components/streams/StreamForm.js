@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Field, reduxForm } from "redux-form";
-// import StreamForm from "./StreamForm";
 
 class StreamForm extends Component {
   renderError(meta) {
