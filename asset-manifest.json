@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/kofimorrison/Streamify.git/static/js/main.88898513.chunk.js",
-    "main.js.map": "/kofimorrison/Streamify.git/static/js/main.88898513.chunk.js.map",
-    "runtime~main.js": "/kofimorrison/Streamify.git/static/js/runtime~main.e092c526.js",
-    "runtime~main.js.map": "/kofimorrison/Streamify.git/static/js/runtime~main.e092c526.js.map",
-    "static/js/2.97cfcc5f.chunk.js": "/kofimorrison/Streamify.git/static/js/2.97cfcc5f.chunk.js",
-    "static/js/2.97cfcc5f.chunk.js.map": "/kofimorrison/Streamify.git/static/js/2.97cfcc5f.chunk.js.map",
-    "index.html": "/kofimorrison/Streamify.git/index.html",
-    "precache-manifest.f83059cfd3fea3b0693217bc1f3aa44a.js": "/kofimorrison/Streamify.git/precache-manifest.f83059cfd3fea3b0693217bc1f3aa44a.js",
-    "service-worker.js": "/kofimorrison/Streamify.git/service-worker.js"
+    "main.js": "/Streamify/static/js/main.88898513.chunk.js",
+    "main.js.map": "/Streamify/static/js/main.88898513.chunk.js.map",
+    "runtime~main.js": "/Streamify/static/js/runtime~main.10ccd1cb.js",
+    "runtime~main.js.map": "/Streamify/static/js/runtime~main.10ccd1cb.js.map",
+    "static/js/2.97cfcc5f.chunk.js": "/Streamify/static/js/2.97cfcc5f.chunk.js",
+    "static/js/2.97cfcc5f.chunk.js.map": "/Streamify/static/js/2.97cfcc5f.chunk.js.map",
+    "index.html": "/Streamify/index.html",
+    "precache-manifest.1c42e3f166127f9bdc26b5d1001251b9.js": "/Streamify/precache-manifest.1c42e3f166127f9bdc26b5d1001251b9.js",
+    "service-worker.js": "/Streamify/service-worker.js"
   }
 }
