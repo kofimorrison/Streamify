@@ -1,0 +1,20 @@
+{
+  "streams": [
+    {
+      "title": "my stream",
+      "description": "this stream",
+      "id": 2
+    },
+    {
+      "title": "test history",
+      "description": "history tested4321",
+      "id": 4
+    },
+    {
+      "title": "test patch",
+      "description": "test 1.1",
+      "userId": "104468119399157065243",
+      "id": 6
+    }
+  ]
+}
